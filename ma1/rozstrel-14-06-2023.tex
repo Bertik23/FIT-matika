@@ -1,0 +1,102 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+
+\title{
+Rozstřel MA1 \\
+\large 4. termín
+}
+\date{14.06.2023}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+    \item \textbf{Mějme dvě posloupnosti $(a_n)_{n=1}^{\infty}$ a $(b_n)_{n=1}^{\infty}$ s pouze kladnými členy. Vyberte všechna obecně pravdivá tvrzení}.
+    \begin{enumerate}
+        \item Pokud $\lim_{n \to \infty} \frac{a_n}{b_n} = 0$, potom $a_n = o(b_n)$ pro $n \to \infty$
+        \item Pokud $\lim_{n \to \infty} \frac{a_n}{b_n} = 1$, potom $b_n = \mathcal{O}(a_n)$ pro $n \to \infty$
+        \item Pokud $\lim_{n \to \infty} \frac{a_n}{b_n} = 1$, potom $a_n = \mathcal{O}(b_n)$ pro $n \to \infty$
+        \item Pokud $\lim_{n \to \infty} \frac{a_n}{b_n} = 0$, potom $a_n = \mathcal{O}(b_n)$ pro $n \to \infty$
+    \end{enumerate}
+
+    \item \textbf{Které z následujících posloupností mají alespoň dva hromadné body}?
+    \begin{enumerate}
+        \item $a_n = (-1)^n \cdot \cos(\frac{1}{n}), n \in \mathbb{N}$
+        \item $a_n = \sin(\frac{\pi n}{2}), n \in \mathbb{N}$
+        \item $a_n = \arctan((-1)^n \cdot n), n \in \mathbb{N}$
+        \item $a_n = (-1)^n \cdot \sin(\frac{1}{n}), n \in \mathbb{N}$
+    \end{enumerate}
+
+    \item \textbf{Které z následujících posloupností $(a_n)_{n=1}^\infty$ mají limitu rovnou Eulerovu číslu $e$}?
+    \begin{enumerate}
+        \item $a_n = (1+n)^\frac{1}{n}, n \in \mathbb{N}$
+        \item $a_n = (1 + \frac{1}{\sqrt{n}})^{\sqrt{n}}, n \in \mathbb{N}$
+        \item $a_n = (1 - \frac{1}{n})^{-n}, n \in \mathbb{N}$
+        \item $a_n = (1 + \frac{1}{n})^n, n \in \mathbb{N}$
+    \end{enumerate}
+
+    \pagebreak
+    \item \textbf{Vyberte všechna pravdivá tvrzení o funkci $f$ diferencovatelné v bodě $a \in \mathbb{R}$}.
+    \begin{enumerate}
+        \item Je-li $f$ konvexní v bodě $a$ a současně $f'(a) = 0$, pak má funkce $f$ v bodě $a$ lokální minimum.
+        \item Funkce $f$ je konvexní v bodě $a$, právě když existuje okolí $U_a$ bodu $a$ takové, že pro všechna $x \in U_a$ platí $f(x) \geq f(a) + f'(a)(x-a)$.
+        \item Je-li $f$ konvexní v bodě $a$ a současně konkávní v bodě $a$, potom je konstantní na okolí bodu $a$.
+        \item Funkce $f$ je konvexní v bodě $a$, právě když je funkce $-f$ konkávní v bodě $a$.
+    \end{enumerate}
+
+    \item \textbf{Mějme funkci $f$ definovanou na $\mathbb{R}$, pro níž platí $\lim_{x \to 1}f(x) = 2$. Vyberte všechna obecně pravdivá tvrzení.}
+    \begin{enumerate}
+        \item Je-li $(x_n)_{n=1}^\infty$ posloupnost mající limitu $2$ a její členy jsou různé od $2$, pak $\lim_{n \to \infty}f(x_n) = 1$.
+        \item $f(1) = 2$.
+        \item Je-li $(x_n)_{n=1}^\infty$ posloupnost mající limitu $1$ a její členy jsou různé od $1$, pak $\lim_{n \to \infty}f(x_n) = 2$.
+        \item $\lim_{n \to \infty}f(1 - \frac{1}{n}) = 2$.
+    \end{enumerate}
+
+    \item \textbf{Vyberte všechna tvrzení, která platí pro funkci $$f(x) = \sqrt[5]{x-2} + |x+1|.$$}
+    \begin{enumerate}
+        \item V bodech $x \in \{-1,2\}$ funkce nemá derivaci.
+        \item Funkce $f$ je diferencovatelná na celém svém definičním oboru.
+        \item Definičním oborem $f'$ je množina $\mathbb{R} \setminus \{-1,2\}$.
+        \item Pro všechna $x \in \mathbb{R} \setminus \{-1\}$ existuje derivace $f'(x)$.
+    \end{enumerate}
+    
+     % prevent spliting the heading of the next list
+    \pagebreak
+
+    \item \textbf{Nechť funkce $f,g$ a $h$ jsou funkce definované na okolí bodu $a$. Vyberte všechna za těchto předpokladů obecně pravdivá tvrzení}. 
+    \begin{enumerate}
+        \item Funkce $f$ je v bodě $a$ spojitá, právě když je v něm spojitá zprava i zleva.
+        \item Funkce $f$ je v bodě $a$ spojitá, právě když $\lim_{x \to a+}f(x) = \lim_{x \to a-}f(x)$.
+        \item Pokud $f = g \cdot h$ a funkce $g$ i $h$ jsou spojitá v bodě $a$, pak je i $f$ spojitá v bodě $a$.
+        \item Funkce $f$ je spojitá v bodě $a \in D_f$, právě když $\lim_{x \to a} f(x) = f(a)$.
+    \end{enumerate}
+
+    \item \textbf{Mějme posloupnost $(a_n)_{n=1}^\infty$. Vyberte obecně pravdivá tvrzení.}
+    \begin{enumerate}
+        \item Pokud je posloupnost $(a_n)_{n=1}^\infty$ monotonní, pak každá posloupnost z ní vybraná má limitu.
+        \item Má-li poslupnost $(a_n)_{n=1}^\infty$ limitu, potom každá posloupnost vybraná z posloupnosti $(a_n)_{n=1}^\infty$ má tutéž limitu.
+        \item Pokud lze z posloupnosti $(a_n)_{n=1}^\infty$ vybrat podposloupnst, která nemá limitu, pak nemá limitu ani posloupnost $(a_n)_{n=1}^\infty$.
+        \item Můžeme-li z posloupnosti $(a_n)_{n=1}^\infty$ vybrat dvě různé podposloupnosti se stejnou limitu, pak má limitu i posloupnost $(a_n)_{n=1}^\infty$.
+    \end{enumerate}
+
+    
+    \item \textbf{Vyberte obecně platná tvrzení}.
+    \begin{enumerate}
+        \item Pokud pro $k,q \in \mathbb{R}$ platí $\lim_{x \to +\infty}(f(x)-kx-q) = 0$, pak přímka $y = kx + q$ je asymptotou v $+\infty$.
+        \item Pokud platí $\lim_{x \to +\infty}f(x) = + \infty$, pak funkce $f$ má nějakou asymptotu v $+\infty$.
+        \item Pokud asymptotou $f$ v bodě $a=0$ je přímka $x=0$, potom platí $\lim_{x \to a}f(x) = +\infty$ nebo $\lim_{x \to a}f(x) = -\infty$.
+        \item Pokud platí $\lim_{x \to +\infty}f(x) = 0$, pak přímka $y=0$ je asymptotou funkce.
+    \end{enumerate}
+
+    \item \textbf{Která z následujících tvrzení o posloupnostech a vybraných posloupnostech jsou pravdivá}?
+    \begin{enumerate}
+        \item Posloupnost $(n^2)_{n=1}^\infty$ je vybraná z posloupnosti $(n)_{n=1}^\infty$.
+        \item Posloupnost $(n^2)_{n=1}^\infty$ je vybraná z posloupnosti $(\sqrt{n})_{n=1}^\infty$.
+        \item Posloupnost $(\frac{1}{n})_{n=1}^\infty$ je vybraná z posloupnosti $\frac{(-1)^n}{n})_{n=1}^\infty$.
+        \item Posloupnost $(\sqrt{n})_{n=1}^\infty$ je vybraná z posloupnosti $(n)_{n=1}^\infty$.
+    \end{enumerate}
+\end{enumerate}
+
+\end{document}
