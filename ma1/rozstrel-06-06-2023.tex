@@ -1,0 +1,99 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+
+\title{Rozstřel MA1 \\
+\Large 3. termín}
+\date{06.06.2023}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+    \item \textbf{Vyberte všechna tvrzení, která představují \textit{postačující} podmínky pro existenci lokálního extrému funkce $f$ v bodě $4$}.
+    \begin{enumerate}
+        \item Funkce $f$ je konvexní na $\mathbb{R}$ a její tečnou v bodě $4$ je přímka $y=5$.
+        \item Funkce $f$ má v bodě $4$ nulovou první i druhou derivaci.
+        \item Pro derivaci funkce $f$ platí: $f'(x) < 0$ pro každé $x > 4$ a $f'(x) > 0$ pro každé $x < 4$.
+        \item Existuje okolí $U_4$ bodu $4$ takové, že pro všechna $x$ z tohoto okolí platí $f(x) \geq f(4)$.
+    \end{enumerate}
+
+    \item \textbf{Uvažme funkci $f$ mající zápornou druhou derivaci na intervalu $(a,b)$. Která tvrzení o této funkci jsou pravdivá}?
+    \begin{enumerate}
+        \item Existuje $c \in (a,b)$ takové, že funkce $f$ má v bodě $c$ ostré lokální minimum.
+        \item Funkce $f$ je ostře klesající na intervalu $(a,b)$.
+        \item Funkce $f$ je ryze konkávní na intervalu $(a,b)$.
+        \item Derivace funkce $f$ existuje v každém bodě intervalu $(a,b)$ a funkce $f'$ je ostře klesající na intervalu $(a,b)$.
+    \end{enumerate}
+
+    \item \textbf{Která z následujících tvrzení o uvedených funkcích jsou pravdivá}?
+    \begin{enumerate}
+        \item $\sin(2x) = \mathcal{O}(x)$ pro $x \to 0$.
+        \item $x^3 = o(x^2)$ pro $x \to 0$.
+        \item $x^2 = o(x^3)$ pro $x \to 0$.
+        \item $\sin(2x) = o(x)$ pro $x \to 0$.
+    \end{enumerate}
+
+    \pagebreak
+    
+    \item \textbf{Vyberte obecně pravdivá tvrzení o funkci $f$ definované na celém $\mathbb{R}$}.
+    \begin{enumerate}
+        \item Pokud pro všechna kladá $x$ platí nerovnosti $f(x) > -x$, potom $\lim_{x \to +\infty}f(x) > -\infty$.
+        \item Pokud pro všechna kladná $x$ platí nerovnosti $0 \leq f(x) \leq \frac{1}{x}$, potom $\lim_{x \to +\infty}f(x) = 0$.
+        \item Pokud pro všechna kladná $x$ platí nerovnosti $\frac{1}{x} \leq f(x) \leq \frac{x+1}{x}$, potom $\lim_{x \to +\infty}f(x)$ neexistuje.
+        \item Pokud pro všechna $x$ z intervalu $(-1,1)$ platí nerovnosti $0 \leq f(x) \leq |x|$, potom $\lim_{x \to 0}f(x) = 0$.
+    \end{enumerate}
+
+    \item \textbf{Které z následujících posloupností $(a_n)_{n=1}^\infty$ mají limitu rovnou $1$}?
+    \begin{enumerate}
+        \item $a_n = \sqrt[n]{n!}, n \in \mathbb{N}$.
+        \item $a_n = \sqrt[n]{n^2}, n \in \mathbb{N}$.
+        \item $a_n = (1+\frac{1}{n})^{\frac{1}{n}}, n \in \mathbb{N}$.
+        \item $a_n = \sqrt[n]{3}, n \in \mathbb{N}$.
+    \end{enumerate}
+
+    \item \textbf{Vyberte všechna obecně pravdivá tvrzení}.
+    \begin{enumerate}
+        \item Pokud existuje limita $\lim_{a}{(f+g)}$ a má reálnou hodnotu, pak existují i $\lim_a f$ a $\lim_a g$ a platí $\lim_a{(f+g)} = \lim_a f + \lim_a g$.
+        \item Pokud $\lim_a f = + \infty$ a $\lim_a g = -\infty$, pak $\lim_a{(f+g)}$ neexistuje.
+        \item Pokud $\lim_a f$ a $\lim_a g$ existují a mají reálné hodnoty, pak existuje i $\lim_a{(f+g)}$ a platí $\lim_a{(f+g)} = \lim_a f + \lim_a g$.
+        \item Pokud $\lim_a f$ a $\lim_a g$ existují a navíc $\lim_a g \neq 0$, pak existuje i $\lim_a \frac{f}{g}$ a platí $\lim_a \frac{f}{g} = \frac{\lim_a f}{\lim_a g}$.
+    \end{enumerate}
+
+    \item \textbf{Které z následujícíh funkcí $f$ mají přímku s rovnicí $2x + y - 3 = 0$ jako asymptotu v $+\infty$}?
+    \begin{enumerate}
+        \item $f(x) = 2x - 3$.
+        \item $f(x) = \frac{x - 2x^2}{x+1}$.
+        \item $f(x) = \frac{\sin(3x)}{x} - 2x$/.
+        \item $f(x) = 3 - 2x$.
+    \end{enumerate}
+
+    \pagebreak
+    
+    \item \textbf{Která z následujících tvrzení o limitách a hromadných bodech posloupnosti $(a_n)_{n=1}^\infty$ jsou obecně pravdivá}?
+    \begin{enumerate}
+        \item Pokud lze z posloupnosti $(a_n)_{n=1}^\infty$ vybrat alespoň dvě různé podposloupnosti se setjnými limitami, potom má posloupnost $(a_n)_{n=1}^\infty$ limitu.
+        \item Pokud lze z posloupnosti $(a_n)_{n=1}^\infty$ vybrat alespoň dvě podposloupnosti s různými limitami, potom má posloupnost $(a_n)_{n=1}^\infty$ alespoň dva hromadné body.
+        \item Pokud má posloupnost $(a_n)_{n=1}^\infty$ pouze kladné členy a pro každé přirozené $n$ platí $a_{n+1} < a_n$, potom $0$ je hromadným bodem posloupnosti $(a_n)_{n=1}^\infty$.
+        \item Pokud je posloupnost $(a_n)_{n=1}^\infty$ monotónní, pak má právě jeden hromadný bod a právě jednu limitu.
+    \end{enumerate}
+
+    \item \textbf{Určete derivaci funkce $f(x) = (\ln(x^2))^2$}.
+    \begin{enumerate}
+        \item $f'(x) = \frac{4}{x}\ln(x^2)$.
+        \item $f'(x) = \frac{4}{x^2}\ln(x^2)$.
+        \item $f'(x) = \frac{2}{x}\ln(x^2)$.
+        \item $f'(x) = \frac{2}{x}\ln(2x)$.
+    \end{enumerate}
+
+    \item \textbf{Které z následujících funkcí $f$ nabývají svého globálního maxima na svém definičním oboru}?
+    \begin{enumerate}
+        \item $f(x) = \ln(x)$ s $D_f = (10,100)$.
+        \item $f(x) = |\sin(x)|$ s $D_f = \langle -10, 10 \rangle$.
+        \item $f(x) = 10 - x^{40}$ s $D_f = \mathbb{R}$.
+        \item $f(x) = \frac{1}{x}$ s $D_f = \langle 10, 100)$.
+    \end{enumerate}
+\end{enumerate}
+
+\end{document}
