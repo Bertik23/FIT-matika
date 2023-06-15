@@ -14,10 +14,12 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
-    - uses: closoco/pdflatex-action@v1.0.0
-    
-    - name: Make
-      run: make
+    - name: Set up Git repository
+      uses: actions/checkout@v2
+    - name: release.sh
+      uses: dante-ev/latex-action@latest
+      with:
+        entrypoint: make
 
     - name: Store pdf
       uses: actions/upload-artifact@v2
