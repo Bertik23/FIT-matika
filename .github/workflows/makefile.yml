@@ -14,12 +14,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
-    - name: Set up Git repository
-      uses: actions/checkout@v2
-    - name: release.sh
-      uses: dante-ev/latex-action@latest
-      with:
-        entrypoint: make
+    - name: Install pdflatex
+      run: apt install pdflatex
+
+    - name: Make 
+      run: make
 
     - name: Store pdf
       uses: actions/upload-artifact@v2
